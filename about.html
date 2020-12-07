@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+
+    <link rel="stylesheet" href="./css/onama.css">
+   
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>O nama</title>
+    
+</head>
+
+<body class="container-fluid">
+      
+      
+    <div>
+        <button class="btn_vrati" type="button"><a href="./index.html">Vrati me na pocetnu</a></button>
+    </div>
+    <div id="pozadina"><br><br><br>
+        <h1 id="tekst">Stranica je trenutno u izradi</h1>
+        <p id="odbrojavanje"></p>
+        
+    </div>
+
+
+
+
+
+
+    <footer id="main-footer" class="grid">
+        <div>Aleksandra Ristić 2018/0420
+            <br>
+            Viktorija Stanojević 2020/1029
+        </div>
+        <div>Project By <a href="http://fon.rs" target="_blank">Termin: 10:15</a></div>
+      </footer>
+</body>
+
+<script>
+    var odbrojavanjeDoDatuma = new Date("Dec 30, 2020 00:00:00").getTime();
+    var odbrojavanjeFja = setInterval(function () {
+        var sada = new Date().getTime();
+        document.getElementById("odbrojavanje").innerHTML = sada;
+        var razlika = odbrojavanjeDoDatuma - sada;
+        var dan = Math.floor(razlika / (1000 * 60 * 60 * 24));
+        var sat = Math.floor((razlika % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var min = Math.floor((razlika % (1000 * 60 * 60)) / (1000 * 60));
+        var sek = Math.floor((razlika % (1000 * 60)) / 1000);
+        document.getElementById("odbrojavanje").innerHTML = "Biće ponovo dostupna za : " + dan + "d " + sat + "s " + min + "m " + sek + "s";
+        if (razlika < 0) {
+            clearInterval(odbrojavanjeFja);
+            document.getElementById("odbrojavanje").innerHTML = "Sajt je trebalo da bude zavrsen";
+        }
+    })
+</script>
+
+
+</html>

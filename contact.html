@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Kontakt</title>
+    </head>
+  <body>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Početna</a>
+        <a href="about.html">O nama</a>
+        <a href="services.html">Usluge</a>
+      </div>
+      
+      
+    
+      <span class = "opn_btn" id="otvori" onclick="openNav()">MENI</span>
+        
+     
+      <header id="showcase" class="grid">
+        <div class="bg-image2"></div>
+        <div class="content-wrap">
+          <h1>Možete nas kontaktirati na način koji vama to najviše odgovara</h1>
+          <p>e-mail, putem mobilnog telefona, ličnom posetom</p>
+          <p>Sigurno najpovoljnije usluge i najbolja saradnja</p>
+     </header>
+
+    
+    <main id="main">
+     
+      <section id="section-a" class="grid">
+        <div class="content-wrap">
+          <h2 class="content-title">Kontaktiraj nas putem broja telefona</h2>
+          <p>Broj telefona:</p><span style="color: darkred;">011/234-567</span></p>
+        </div>
+      </section>
+
+      <hr>  
+      
+      <section id="section-kontakt">
+            <div class="container">
+                <form>
+                  <label for="firstname">Ime</label>
+                  <input type="text" id="ime" name="firstname" placeholder="Vaše ime...">
+              
+                  <label for="lastname">Prezime</label>
+                  <input type="text" id="prezime" name="lastname" placeholder="Vaše prezime...">
+              
+                  <label for="country">Država</label>
+                  <select id="country" name="country">
+                    <option value="serbia">Srbija</option>
+                    <option value="bosnia&herzegovina">Bosna i Hercegovina</option>
+                    <option value="montenegro"> Crna Gora</option>
+                  </select>
+              
+                  <label for="subject">Slušamo Vas</label>
+                  <textarea id="subject" name="subject" placeholder="Napišite Vaš problem, zahtev..." 
+                  style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit" onclick="myFunction()">
+                </form>
+            </div>
+      </section>
+    
+      
+      <section id="section-c" class="grid">
+        <div class="content-wrap">
+          <h2 class="content-title">Rešićemo vaše probleme!</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nam rerum vel earum error fugiat cupiditate, dolore eius! Minus, explicabo.</p>
+        </div>
+      </section>
+    
+     
+      <section id="section-d" class="grid">
+        <div class="box">
+          <h2 class="content-title">Kontaktirajte nas</h2>
+          <p>Možemo komunicirati na način koji vama najviše odgovora. Pozovite naš broj za podršku, posašljite nam mail, 
+            dođite lično u naše prostorije na BESPLATNE konsultacije!</p>
+          <p>011/1234-567</p>
+          <p>podrska@bestsolution.rs</p>
+          <a href="contact.html">KONTAKT FORMA</a>
+        </div>
+        <div class="box">
+          <h2 class="content-title">O nama</h2>
+          <p class="btn_toggle"> Mi smo tim mladih zaljubljenika u tehnologiju i njen napredak. Konstantno se edukujemo i održavamo korak sa novitetima. Svi člaovi nešeg tima su stručni i obrazovani u ustanovama koje pružaju najkvalitetnija zananja iz pomenute oblasti. Stečeno iskustvo nesebično
+            plasiramo kroz različite ideje i rešenja sa ciljem da zadovoljimo potrebe i zahteve naših klijenata.</p>
+        </div>
+      </section>
+    </main>
+  
+  
+    <footer id="main-footer" class="grid">
+      <div>Aleksandra Ristić 2018/0420
+        <br>
+        Viktorija Stanojević 2020/1029</div>
+      <div>Project By <a href="http://fon.rs" target="_blank">Termin 10:15</a></div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="./js/contact.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/services.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".btn").click(function(){
+            $(".btn_toggle").toggle(3000);
+        });
+      });
+    </script>
+  </body>
+</html>
+

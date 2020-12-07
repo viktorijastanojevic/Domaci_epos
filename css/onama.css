@@ -1,0 +1,178 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.navbar{
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #ffffff;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0 1px 2px #e2e2e2;
+}
+
+.nav-link{
+    font-family: 'Roboto', 'serif';
+    font-size: 12pt;
+    font-weight: bold;
+    color: #0f63ab;
+}
+
+.fa.fa-navicon {
+    color: #0f63ab;
+  }
+
+.dropdown-menu{
+    margin-top: 8px;
+    border: none;
+    border-radius: 0;
+    z-index: 2;
+} 
+
+.navbar-nav{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-item{
+    margin: 0 30px 0 30px;
+}
+
+.btn_vrati{
+    padding: 25px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #111;
+    margin: auto;
+    width: 100%;
+    border: 3px solid rgb(12, 12, 12);
+    
+}
+.btn_vrati a{
+    text-decoration: none;
+    color:white;
+    font-size: 25px;
+}
+
+
+@media screen and (min-width:992px){
+    .nav-item{
+        margin: 0 48px 0 48px;
+    }
+}
+
+.dropdown-item{
+    font-family: 'Roboto', 'serif';
+    font-size: 12pt;
+    font-weight: bold;
+    color: #0f63ab;
+}
+
+.dropdown-item:hover{
+    background-color: #0f63ab;
+    color: #ffffff;
+}
+
+.header {
+    
+    background-color: #ffffff;
+    font-family: 'Roboto', serif;
+    font-weight: bold;
+    color: #0f63ab;
+    height: 70px;
+    font-size: 27px;
+    padding: 10px;
+}
+
+#pozadina{
+background-color: #a8aaa3;
+width:100%;
+height:100vh;
+}
+
+#tekst{
+    text-align: center;
+    margin-top: 10%;
+}
+#main-footer {
+    padding: 2em;
+    background: #000;
+    color: #fff;
+    text-align: center;
+   
+    font-size: 1.1em;
+    
+  }
+  
+  #main-footer a {
+    color: #2690d4;
+    text-decoration: none;
+  }
+  
+  #main-footer a:hover {
+    color: #da16b9;
+    
+  }
+
+
+
+
+
+@media (min-width: 700px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+  
+    #section-a .content-text {
+      columns: 2;
+      column-gap: 2em;
+    }
+  
+    #section-a .content-text p {
+      padding-top: 0;
+    }
+  
+    .content-wrap,
+    #section-b ul {
+      grid-column: 2/4;
+    }
+  
+    .box,
+    #main-footer div {
+      grid-column: span 2;
+    }
+  
+    #section-b ul {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    #section-b li {
+      width: 31%;
+    }
+  }
+
+  
+#odbrojavanje{
+    text-align: center;
+    font-family: 'Roboto', 'serif';
+    font-weight: bold;
+    font-size: 12pt;
+    }
+
+
+
+
+
+
+
+
